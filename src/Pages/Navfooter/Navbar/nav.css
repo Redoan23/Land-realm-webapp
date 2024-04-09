@@ -1,0 +1,8 @@
+.stroke{
+    -webkit-text-stroke: 84cc16;
+    background-clip: text;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: #84cc16;
+    -webkit-text-fill-color: transparent;
+    
+}
