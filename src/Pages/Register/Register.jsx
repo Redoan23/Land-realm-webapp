@@ -3,15 +3,12 @@ import { Link } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
 import { ToastContainer, toast,Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from "firebase/auth";
 
 
 export default function Register() {
     const { createUser } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState('')
-
-
-    const notify = () => toast("Wow so easy!");
-
 
     const handleRegisterSubmit = e => {
         e.preventDefault()
@@ -39,18 +36,13 @@ export default function Register() {
         createUser(email, password)
             .then(result => {
                 console.log(result)
-
-                toast.success('Registration Successful', {
-                    position: "top-right",
-                    autoClose: 2500,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "colored",
-                    transition: Flip
-                });
+                const user=result.user
+                updateProfile(user,{
+                    displayName:name,
+                    photoURL: photo
+                })
+                
+                alert('Congratulations! Registration Successful.')
 
             })
             .catch(err => (
@@ -101,7 +93,7 @@ export default function Register() {
                     <p className="text-xs text-center pb-3">Already have an account? <Link to='/login' className="text-blue-600">Login</Link></p>
 
                     {
-                        errMsg && <p>{errMsg}</p>
+                        errMsg && <p className=" text-center text-red-500 py-2">{errMsg}</p>
                     }
                 </div>
             </div>

@@ -1,8 +1,6 @@
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth"
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
 import { createContext, useEffect, useState } from "react"
 import auth from "../../firebase/firebase.config"
-import { ToastContainer, toast, Flip } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext(null)
 
@@ -11,13 +9,23 @@ export const AuthContext = createContext(null)
 const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null)
+    const googleProvider = new GoogleAuthProvider()
+    const gitProvider = new GithubAuthProvider()
 
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
+        
     }
 
     const login = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    const googleLogin = () => {
+      return  signInWithPopup(auth, googleProvider)
+    }
+    const githubLogin=()=>{
+       return signInWithPopup(auth, gitProvider)
     }
 
     useEffect(() => {
@@ -31,46 +39,19 @@ const AuthProvider = ({ children }) => {
     }, [])
 
     const logout = () => {
-
-        toast.success('Login Successful', {
-            position: "top-right",
-            autoClose: 2500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-            transition: Flip
-        })
-         signOut(auth)
-
-
-
+        signOut(auth)
+        alert('successfully logged out')
     }
 
 
 
-    const authInfo = { user, createUser, login, logout }
+    const authInfo = { user, createUser, login, logout, googleLogin,githubLogin }
 
     return (
 
 
         <AuthContext.Provider value={authInfo}>
             {children}
-            <ToastContainer
-                position="top-right"
-                autoClose={2500}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="colored"
-                transition:Flip
-            />
         </AuthContext.Provider>
 
 

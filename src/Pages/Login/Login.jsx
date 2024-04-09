@@ -1,14 +1,12 @@
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
 
 
 
-    const { login } = useContext(AuthContext)
+    const { login, googleLogin, githubLogin } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState(null)
 
     const handleSubmit = e => {
@@ -56,7 +54,7 @@ export default function Login() {
                         </div>
                         <div>
                             {
-                                errMsg && <p className="text-red-500">invalid credential</p>
+                                errMsg && <p className="text-red-500 text-center">invalid credential</p>
                             }
                         </div>
                         <div className="form-control mt-6">
@@ -65,8 +63,8 @@ export default function Login() {
                     </form>
 
                     <div className="flex items-center justify-center pb-5 gap-6">
-                        <Link><span className="text-blue-600 font-semibold">G</span><span className=" text-red-600">o</span><span className=" text-yellow-400">o</span><span className=" text-blue-600">g</span><span className=" text-green-700">l</span><span className="text-red-600">e</span></Link>
-                        <Link><span className="text-black ">Github</span></Link>
+                        <Link onClick={googleLogin}><span className="text-blue-600 font-semibold">G</span><span className=" text-red-600">o</span><span className=" text-yellow-400">o</span><span className=" text-blue-600">g</span><span className=" text-green-700">l</span><span className="text-red-600">e</span></Link>
+                        <Link onClick={githubLogin}><span className="text-black ">Github</span></Link>
                     </div>
 
                     <p className="text-xs pb-3 flex justify-center gap-2">Don't have an account? <Link to='/register' className="text-red-600">Register</Link></p>

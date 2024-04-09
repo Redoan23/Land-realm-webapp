@@ -20,7 +20,7 @@ export default function Navbar() {
     const navigate = useNavigate()
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 pt-7">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ export default function Navbar() {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-4xl text-white "><span className="   text-green-400">Land</span> <span className="stroke text-white">Realm</span></a>
+                <a className="btn btn-ghost text-4xl text-white "><span className="   text-green-400 font-black">Land</span> <span className="stroke text-white">Realm</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -39,11 +39,11 @@ export default function Navbar() {
             </div>
             <div className="navbar-end">
 
-                <IoPersonCircle />
+
                 {
                     user ?
-                        <div>
-                            {user.email}
+                        <div className=" flex items-center gap-3">
+                            {user?.photoURL ? <div data-tip={user.displayName} className="lg:tooltip  w-10 h-30"><img className="  w-full h-full rounded-full" src={user.photoURL} alt="" /></div> : <div className=" text-5xl">< IoPersonCircle /></div>}
                             <Link onClick={logout}><button className=" btn">Logout</button></Link>
                         </div>
                         :
