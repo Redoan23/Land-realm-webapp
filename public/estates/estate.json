@@ -1,0 +1,146 @@
+[
+    {
+        "estate_title": "Sprawling Ranch Retreat",
+        "id": 1,
+        "segment_name": "Ranch",
+        "description": "Escape to the picturesque countryside with this expansive ranch retreat. Encompassing over 100 acres of rolling hills,verdant meadows, and sprawling landscapes, this property offers an idyllic escape from the hustle and bustle of city life. As you step onto the grounds, you'll be greeted by the soothing sounds of nature and the fresh scent of wildflowers dancing in the breeze.This ranch is not just a property; it's a lifestyle. Whether you're an avid equestrian enthusiast, a nature lover, or simply seeking tranquility in a serene setting, this retreat has something for everyone. The estate boasts a range of amenities, including horse stables equipped with modern facilities, expansive riding trails that wind through the countryside, and a tranquil pond where you can while away the hours fishing or simply soaking in the natural beauty.As you explore the vast grounds, you'll encounter pockets of enchanting wilderness, each offering its own unique charm. From secluded groves perfect for picnics to panoramic vistas that stretch as far as the eye can see, every corner of this ranch is a testament to the beauty of rural living.But perhaps the true magic of this retreat lies in its ability to transport you to a simpler time, where the stresses of modern life melt away and you're free to connect with nature and with yourself. Whether you're watching the sunset paint the sky in hues of pink and gold, gathering around a crackling bonfire with friends and family, or simply enjoying a leisurely horseback ride through the countryside, you'll find that time moves a little slower here, allowing you to savor every moment.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "100 acres",
+        "location": "Rural Countryside, USA",
+        "facilities": [
+            "horse stables",
+            "riding trails",
+            "pond"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Vineyard Estate",
+        "id": 2,
+        "segment_name": "Vineyard",
+        "description": "Indulge in the beauty of wine country living with this exquisite vineyard estate. Nestled among 50 acres of meticulously manicured vineyards, this property offers a serene retreat for those seeking a taste of the good life. From the moment you arrive, you'll be enchanted by the sight of lush grapevines stretching as far as the eye can see, their leaves shimmering in the golden sunlight.This estate is a wine lover's paradise, boasting rows upon rows of grapevines that produce some of the finest wines in the region. From crisp Chardonnays to robust Cabernets, the vineyards here are a testament to the artistry and craftsmanship of winemaking. And with a state-of-the-art winery on-site, you'll have the opportunity to witness the winemaking process firsthand, from grape to glass. But wine isn't the only thing this estate has to offer. The property also features a charming farmhouse, where you can retreat after a day of exploring the vineyards. With its rustic-chic decor and sweeping views of the surrounding countryside, the farmhouse is the perfect place to unwind and recharge.Outside, you'll find a host of amenities designed to enhance your stay. From a cozy tasting room where you can sample the estate's finest wines to a tranquil outdoor patio where you can sip a glass of your favorite vintage as you watch the sunset, every aspect of this property is designed to elevate your wine country experience.        But perhaps the true magic of this estate lies in its ability to transport you to a place of pure relaxation and indulgence. Whether you're strolling through the vineyards at sunrise, enjoying a leisurely bike ride along the country lanes, or simply lounging by the pool with a good book, you'll find that life moves at a slower pace here, allowing you to savor every moment and create memories that will last a lifetime.",
+        "price": "$3,000,000",
+        "status": "sale",
+        "area": "50 acres",
+        "location": "Wine Country, USA",
+        "facilities": [
+            "vineyards",
+            "winery",
+            "tasting room"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Secluded Woodland Sanctuary",
+        "id": 3,
+        "segment_name": "Woodland",
+        "description": "Experience tranquility like never before in this secluded woodland sanctuary. Tucked away amidst towering trees and lush greenery, this property is a haven for those seeking peace and serenity in nature. From the moment you set foot on the grounds, you'll feel the stresses of everyday life melt away, replaced by a sense of calm and contentment that can only be found in the heart of the forest.As you wander along the winding forest trails, you'll encounter a rich tapestry of sights and sounds, from the gentle rustle of leaves in the breeze to the melodious chirping of birds overhead. Each step brings you closer to nature, allowing you to fully immerse yourself in the beauty of the natural world. But this sanctuary is more than just a place of quiet reflection; it's also a playground for outdoor enthusiasts. With acres of pristine wilderness to explore, there's no shortage of activities to keep you entertained. Whether you're hiking along rugged mountain paths, mountain biking through dense forests, or simply enjoying a leisurely picnic by the stream, you'll find that adventure awaits around every corner. And when it's time to relax and recharge, you'll find no shortage of peaceful spots to unwind. From cozy cabins nestled among the trees to secluded clearings perfect for meditation and yoga, every corner of this sanctuary is designed to promote relaxation and rejuvenation. But perhaps the true magic of this woodland sanctuary lies in its ability to awaken your senses and reconnect you with the natural world. Whether you're marveling at the sight of a majestic oak tree standing tall against the sky, listening to the soothing sound of water trickling over rocks, or simply breathing in the earthy scent of moss and ferns, you'll find that every moment spent here is a reminder of the beauty and wonder of the world around us.",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "50 acres",
+        "location": "Forest Reserve, USA",
+        "facilities": [
+            "forest trails",
+            "wildlife habitat",
+            "stream"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Organic Farmstead",
+        "id": 4,
+        "segment_name": "Farm",
+        "description": "Embrace the charm of sustainable living with this enchanting organic farmstead. Spread across 100 acres of fertile farmland, this property offers a unique opportunity to cultivate your own crops and live off the land. From the moment you arrive, you'll be greeted by the sight of lush fields stretching as far as the eye can see, their rich soil teeming with life and vitality.But this farmstead is more than just a place to grow food; it's a way of life. With a focus on organic farming practices and sustainable agriculture, this property is a shining example of how we can live in harmony with the land while still meeting our needs. Whether you're tending to the crops in the greenhouse, harvesting vegetables from the garden, or caring for the animals in the barn, you'll find that every aspect of life on the farm is imbued with a sense of purpose and meaning.And the benefits of this lifestyle extend far beyond the farmstead itself. By embracing sustainable living practices, you'll not only reduce your carbon footprint and minimize your impact on the environment, but you'll also reap the rewards of living in closer harmony with nature. From the fresh, organic produce grown right on your doorstep to the sense of satisfaction that comes from knowing you're living in a way that's in line with your values, the joys of farm life are endless. But perhaps the true magic of this farmstead lies in its ability to reconnect you with the land and with yourself. Whether you're watching the sun rise over the fields, listening to the gentle clucking of chickens as they roam freely through the pasture, or simply enjoying a quiet moment of reflection by the pond, you'll find that life on the farm is a rich and rewarding experience that nourishes the body, mind, and soul.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "100 acres",
+        "location": "Farmland, USA",
+        "facilities": [
+            "organic crops",
+            "greenhouse",
+            "barn"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Mountain Wilderness Retreat",
+        "id": 5,
+        "segment_name": "Wilderness",
+        "description": "Embark on an adventure into the heart of the mountains with this wilderness retreat. Set amidst 200 acres of pristine alpine wilderness, this property is a paradise for outdoor enthusiasts and nature lovers alike. From the moment you arrive, you'll be captivated by the rugged beauty of the landscape, with its towering peaks, crystal-clear streams, and dense forests stretching as far as the eye can see.But this retreat is more than just a scenic getaway; it's a gateway to adventure. With miles of hiking trails crisscrossing the mountainside, there's no shortage of opportunities to explore the great outdoors. Whether you're trekking to a hidden waterfall, summiting a towering peak, or simply enjoying a leisurely stroll through the woods, you'll find that every step brings you closer to the beauty and wonder of the natural world.And the adventures don't stop when the sun goes down. With clear skies free from light pollution, this wilderness retreat offers unparalleled opportunities for stargazing. Whether you're marveling at the Milky Way stretching across the night sky or searching for constellations with a telescope, you'll find that the beauty of the cosmos is on full display here, reminding you of the vastness and majesty of the universe.But perhaps the true magic of this wilderness retreat lies in its ability to reconnect you with the wild spirit within. Whether you're listening to the haunting call of a distant wolf, feeling the exhilaration of conquering a challenging mountain trail, or simply basking in the peace and solitude of nature, you'll find that every moment spent here is a reminder of the beauty and wonder of the world around us.",
+        "price": "$1,500,000",
+        "status": "sale",
+        "area": "200 acres",
+        "location": "Mountain Range, USA",
+        "facilities": [
+            "mountain views",
+            "hiking trails",
+            "fishing stream"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Riverfront Farm",
+        "id": 6,
+        "segment_name": "Farm",
+        "description": "Experience the beauty of riverfront living with this picturesque farm property. Stretching across 75 acres of fertile farmland, this property offers unparalleled access to the tranquil waters of the river. From the moment you arrive, you'll be enchanted by the sight of the river winding its way through the countryside, its gentle currents beckoning you to explore. But this farm is more than just a scenic retreat; it's a working agricultural operation. With fields of crops stretching down to the water's edge, this property is a testament to the power of the land and the bounty it provides. Whether you're planting seeds in the spring, harvesting crops in the summer, or tending to the animals in the barn, you'll find that every aspect of life on the farm is connected to the rhythm of the seasons and the cycle of life.And the benefits of riverfront living extend far beyond the farmstead itself. With access to the river, you'll have the opportunity to enjoy a host of recreational activities right on your doorstep. Whether you're casting a line into the water in search of the perfect catch, kayaking along the gentle currents, or simply lounging on the riverbank with a good book, you'll find that life on the riverfront is a rich and rewarding experience that nourishes the body, mind, and soul.But perhaps the true magic of this farm lies in its ability to reconnect you with the land and with yourself. Whether you're watching the sun rise over the water, listening to the soothing sound of the river as it flows by, or simply enjoying a quiet moment of reflection on the porch of the farmhouse, you'll find that life on the riverfront is a serene and tranquil experience that reminds you of the beauty and wonder of the natural world.",
+        "price": "$900,000",
+        "status": "sale",
+        "area": "75 acres",
+        "location": "Riverfront, USA",
+        "facilities": [
+            "riverfront",
+            "farming fields",
+            "farmhouse"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Historic Plantation Estate",
+        "id": 7,
+        "segment_name": "Plantation",
+        "description": "Step back in time with this historic plantation estate. Spread across 500 acres of sprawling grounds, this property is a testament to the grandeur and elegance of the antebellum South. From the moment you arrive, you'll be transported to a bygone era, where moss-draped oaks line the driveway and stately columns grace the entrance to the mansion. But this estate is more than just a relic of the past; it's a living piece of history. With its meticulously preserved architecture and carefully tended gardens, this property offers a glimpse into the opulence and sophistication of plantation life in the 19th century. Whether you're exploring the grand rooms of the mansion, wandering through the formal gardens, or simply strolling along the oak-lined pathways, you'll find that every corner of this estate is steeped in history and tradition. And the estate's rich history is not limited to its architecture and grounds. From the stories of the families who once called this place home to the artifacts and heirlooms that still grace its halls, every aspect of this estate tells a tale of a bygone era, reminding you of the lives and legacies of those who came before.But perhaps the true magic of this plantation estate lies in its ability to transport you to a time and place where elegance and refinement were paramount. Whether you're sipping mint juleps on the veranda, attending a formal ball in the grand ballroom, or simply wandering the grounds in search of hidden treasures, you'll find that life on the plantation is a rich and rewarding experience that invites you to step back in time and experience the beauty and splendor of a bygone era.",
+        "price": "$4,000,000",
+        "status": "sale",
+        "area": "500 acres",
+        "location": "Southern Plantation, USA",
+        "facilities": [
+            "historic mansion",
+            "oak-lined driveway",
+            "formal gardens"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Tranquil Lakeside Retreat",
+        "id": 8,
+        "segment_name": "Retreat",
+        "description": "Unwind in style with this tranquil lakeside retreat. Nestled on the shores of a serene lake, this property offers stunning water views and a sense of serenity that's hard to find elsewhere. From the moment you arrive, you'll be captivated by the sight of the lake stretching out before you, its sparkling waters inviting you to explore. But this retreat is more than just a scenic getaway; it's a haven for relaxation and rejuvenation. Whether you're lounging on the deck with a good book, taking a leisurely swim in the crystal-clear waters, or simply soaking up the sun on the sandy beach, you'll find that every moment spent here is a reminder of the simple pleasures of lakeside living.And the benefits of lakeside living extend far beyond the property itself. With access to the lake, you'll have the opportunity to enjoy a host of recreational activities right on your doorstep. Whether you're kayaking along the tranquil waters, fishing for bass and trout, or simply watching the sunset paint the sky in shades of pink and gold, you'll find that life on the lakeside is a rich and rewarding experience that nourishes the body, mind, and soul.But perhaps the true magic of this lakeside retreat lies in its ability to reconnect you with the beauty and wonder of the natural world. Whether you're listening to the soothing sound of the waves lapping against the shore, watching the stars twinkle in the night sky, or simply breathing in the fresh, clean air, you'll find that every moment spent here is a reminder of the peace and tranquility that can be found in nature.",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "10 acres",
+        "location": "Lakeside, USA",
+        "facilities": [
+            "lakefront",
+            "boathouse",
+            "fire pit"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    },
+    {
+        "estate_title": "Equestrian Paradise",
+        "id": 9,
+        "segment_name": "Equestrian",
+        "description": "Live your passion for horses with this luxurious equestrian paradise. Spread across 150 acres of pristine pastureland, this property offers everything you need to indulge in the equestrian lifestyle. From the moment you arrive, you'll be greeted by the sight of horses grazing in lush green fields, their sleek coats shimmering in the sunlight.But this paradise is more than just a place to keep horses; it's a haven for equestrians of all levels. Whether you're a seasoned rider looking to hone your skills or a novice eager to learn the ropes, you'll find that every aspect of this property is designed to cater to your needs. From the state-of-the-art riding arena where you can practice your jumps to the miles of scenic trails where you can explore the countryside on horseback, you'll find that there's no shortage of opportunities to saddle up and hit the trail.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "150 acres",
+        "location": "Equestrian Community, USA",
+        "facilities": [
+            "riding arena",
+            "luxury stables",
+            "pastures"
+        ],
+        "image": "https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg"
+    }
+]

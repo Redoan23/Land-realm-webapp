@@ -1,8 +1,6 @@
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
-import { ToastContainer, toast,Flip } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { updateProfile } from "firebase/auth";
 
 
@@ -97,7 +95,7 @@ export default function Register() {
                     }
                 </div>
             </div>
-            <ToastContainer
+            {/* <ToastContainer
                 position="top-right"
                 autoClose={2500}
                 hideProgressBar={false}
@@ -109,7 +107,7 @@ export default function Register() {
                 pauseOnHover
                 theme="colored"
                 transition:Flip
-            />
+            /> */}
         </div>
     )
 }
