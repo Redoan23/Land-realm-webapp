@@ -2,11 +2,13 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
 import { updateProfile } from "firebase/auth";
+import { IoIosEye, IoIosEyeOff  } from "react-icons/io";
 
 
 export default function Register() {
     const { createUser } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState('')
+    const [showPass, setShowPass] = useState(false)
 
     const handleRegisterSubmit = e => {
         e.preventDefault()
@@ -34,12 +36,12 @@ export default function Register() {
         createUser(email, password)
             .then(result => {
                 console.log(result)
-                const user=result.user
-                updateProfile(user,{
-                    displayName:name,
+                const user = result.user
+                updateProfile(user, {
+                    displayName: name,
                     photoURL: photo
                 })
-                
+
                 alert('Congratulations! Registration Successful.')
 
             })
@@ -78,10 +80,14 @@ export default function Register() {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                            <input type={showPass ?'text': 'password'} name="password" placeholder="password" className=" relative input input-bordered" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
+                        </div>
+                        <div className=" absolute top-[360px] left-[325px]" onClick={()=>{setShowPass(!showPass)}}>
+                            {!showPass&& <IoIosEye/>}
+                            {showPass && <IoIosEyeOff/>}
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary bg-transparent  border-2 border-red-500 text-red-700 hover:bg-red-500 hover:border-0 hover:text-white">Register</button>
