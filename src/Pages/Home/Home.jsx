@@ -3,7 +3,7 @@ import 'swiper/css';
 import { Link, useLoaderData } from "react-router-dom";
 
 export default function Home() {
-    document.title='Home'
+    document.title='Land realm'
 
     const estates = useLoaderData()
     console.log(estates)
@@ -37,7 +37,7 @@ export default function Home() {
                         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center'>
                             {estates.map(estate => <div key={estate.id}>
 
-                                <div className=" rounded-3xl w-96 shadow-xl image-full">
+                                <div className=" rounded-3xl md:w-72 lg:w-96 shadow-xl image-full">
                                     <figure className='p-3'><img className=' rounded-3xl' src={estate.image} alt="estate" /></figure>
                                     <div className="card-body ">
                                         <h2 className="card-title">{estate.estate_title}</h2>

@@ -1,0 +1,72 @@
+[
+    {
+        "title": "New Residential Community Launched in Green Valley",
+        "date": "2024-04-14",
+        "description": "Exciting news for homebuyers! A brand new residential community has been launched in the picturesque Green Valley area. Offering modern amenities and scenic views, this community is set to redefine living standards.",
+        "image": "https://i.ibb.co/XC5f8xP/102.jpg",
+        "link": "https://example.com/news/new-community-green-valley"
+    },
+    {
+        "title": "Expansion Plans Revealed for Riverside Estates",
+        "date": "2024-04-12",
+        "description": "Riverside Estates announces ambitious expansion plans to enhance its offerings. The expansion will include new parks, recreational facilities, and commercial spaces, making it an even more desirable place to live.",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/expansion-riverside-estates"
+    },
+    {
+        "title": "Grand Opening of Lakeview Heights Phase 2",
+        "date": "2024-04-10",
+        "description": "Lakeview Heights Phase 2 is now open for sale! Explore spacious homes with breathtaking views of the lake. Don't miss this opportunity to own your dream home in this prestigious community.",
+        "image": "https://i.ibb.co/XC5f8xP/102.jpg",
+        "link": "https://example.com/news/lakeview-heights-phase2-grand-opening"
+    },
+    {
+        "title": "Announcing Exclusive Waterfront Villas at Harbor Point",
+        "date": "2024-04-08",
+        "description": "Introducing luxurious waterfront villas at Harbor Point! Enjoy unparalleled waterfront living with private docks, stunning sunsets, and premium amenities. Reserve your villa now!",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/waterfront-villas-harbor-point"
+    },
+    {
+        "title": "Groundbreaking Ceremony for Serenity Meadows",
+        "date": "2024-04-05",
+        "description": "Serenity Meadows breaks ground on its newest phase! This master-planned community will feature green spaces, walking trails, and family-friendly amenities. Join us as we celebrate the start of something extraordinary.",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/groundbreaking-serenity-meadows"
+    },
+    {
+        "title": "New Retail Center Coming Soon to Sun Valley Estates",
+        "date": "2024-04-02",
+        "description": "Exciting news for residents of Sun Valley Estates! A new retail center is set to open soon, offering a variety of shops, restaurants, and services. Stay tuned for updates.",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/retail-center-sun-valley-estates"
+    },
+    {
+        "title": "Community BBQ Event at Mountain View Heights",
+        "date": "2024-03-30",
+        "description": "Join us for a community BBQ event at Mountain View Heights! Meet your neighbors, enjoy delicious food, and experience the vibrant community spirit. See you there!",
+        "image": "https://i.ibb.co/XC5f8xP/102.jpg",
+        "link": "https://example.com/news/community-bbq-mountain-view-heights"
+    },
+    {
+        "title": "Exclusive Pre-Sale Event for Woodland Reserve Phase 3",
+        "date": "2024-03-27",
+        "description": "Be the first to reserve your homesite at Woodland Reserve Phase 3! Join us for an exclusive pre-sale event and secure special incentives. Don't miss out on this limited opportunity.",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/pre-sale-woodland-reserve-phase3"
+    },
+    {
+        "title": "Launch of Eco-Friendly Townhomes at Green Living Estates",
+        "date": "2024-03-24",
+        "description": "Introducing eco-friendly townhomes at Green Living Estates! These energy-efficient homes feature sustainable design and modern comforts. Embrace a greener lifestyle today.",
+        "image": "https://i.ibb.co/XC5f8xP/102.jpg",
+        "link": "https://example.com/news/eco-friendly-townhomes-green-living-estates"
+    },
+    {
+        "title": "Groundbreaking Ceremony for Oasis Meadows Golf Course",
+        "date": "2024-03-20",
+        "description": "Join us as we break ground on Oasis Meadows Golf Course! Designed by renowned architects, this championship course promises an unparalleled golfing experience. Tee off with us!",
+        "image": "https://i.ibb.co/xs8BWsd/13956.jpg",
+        "link": "https://example.com/news/groundbreaking-oasis-meadows-golf-course"
+    }
+]

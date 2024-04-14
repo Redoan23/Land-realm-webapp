@@ -8,6 +8,7 @@ import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import EstateDetails from "../Pages/EstaeDetails/EstateDetails";
 import Error from "../Pages/Error/Error";
+import LatestNews from "../Pages/LatestNews/LatestNews";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
                 path: '/estatedetails/:id',
                 loader: () => fetch("/estates/estate.json"),
                 element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
+            },
+            {
+                path: '/latestnews',
+                element: <PrivateRoute><LatestNews></LatestNews></PrivateRoute>,
+                loader:()=>fetch('/latestnews/latestnews.json')
             }
 
         ]

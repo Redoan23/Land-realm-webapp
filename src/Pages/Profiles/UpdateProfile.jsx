@@ -3,7 +3,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider"
 import { updateProfile } from "firebase/auth"
 
 export default function UpdateProfile() {
-    document.title = 'Update | Profile'
+    document.title = 'Update Profile'
     const { user } = useContext(AuthContext)
     // const [newName, setNewName] = useState(null)
     // const [URL, setURL] = useState(null)
@@ -20,18 +20,20 @@ export default function UpdateProfile() {
             displayName: newName,
             photoURL: url,
         })
+
+        e.target.reset()
     }
 
     return (
         < div >
-            <div className="hero min-h-screen bg-base-200">
+            <div className="lg:hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div>
-                        <p><span className="">Current Username</span> : <span className=" font-semibold">{user.displayName}</span></p>
-                        <p><span>Current Useremail</span> : <span className=" font-semibold">{user.email}</span></p>
-                        <p><span>Current PhotoURL </span>: <span className=" font-semibold">{user.photoURL}</span></p>
-                    </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <form className="  md:border-l-2 border-gray-700">
+                        <p className=" p-2"><span className="text-gray-500">Current Username</span> : <span className=" border-b-2 border-gray-600 font-semibold">{user.displayName}</span></p>
+                        <p className=" p-2"><span className="text-gray-500">Current Useremail</span> : <span className=" border-b-2 border-gray-600 font-semibold">{user.email}</span></p>
+                        <p className=" w-72 md:w-full overflow-auto p-2"><span className="text-gray-500">Current PhotoURL </span>: <span className="border-b-2 border-gray-600 font-semibold">{user.photoURL}</span></p>
+                    </form>
+                    <div className="card shrink-0 w-60 lg:w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleUpdateProfile} className="card-body">
                             <div className="form-control">
                                 <label className="label">

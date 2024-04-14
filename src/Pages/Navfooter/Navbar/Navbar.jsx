@@ -12,6 +12,7 @@ export default function Navbar() {
 
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/latestnews'}>Latest News</NavLink></li>
         {user && <li><NavLink to={'/updateProfile'}>Update Profile</NavLink></li>}
         {user && <li><NavLink to={'/userProfile'}>User Profile</NavLink></li>}
 
