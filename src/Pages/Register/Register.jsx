@@ -6,6 +6,9 @@ import { IoIosEye, IoIosEyeOff  } from "react-icons/io";
 
 
 export default function Register() {
+
+    document.title='Register'
+
     const { createUser } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState('')
     const [showPass, setShowPass] = useState(false)

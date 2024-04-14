@@ -1,7 +1,8 @@
-export default function UpdateProfile(){
-    return(
-        <div>
+export default function UpdateProfile() {
+    document.title = 'Update | Profile'
+    return (
+        < div >
             
-        </div>
+        </div >
     )
-    }
+}

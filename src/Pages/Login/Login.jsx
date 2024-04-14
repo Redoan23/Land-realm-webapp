@@ -4,7 +4,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider"
 
 export default function Login() {
 
-
+    document.title='Login'
 
     const { login, googleLogin, githubLogin } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState(null)

@@ -30,7 +30,7 @@ export default function Navbar() {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-4xl text-white "><span className="   text-green-400 font-black">Land</span> <span className="stroke text-white">Realm</span></a>
+                <Link to={'/'} className="btn btn-ghost text-4xl text-white "><span className="   text-green-400 font-black">Land</span> <span className="stroke text-white">Realm</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Link, useLoaderData } from "react-router-dom";
 
-
 export default function Home() {
+    document.title='Home'
 
     const estates = useLoaderData()
     console.log(estates)
