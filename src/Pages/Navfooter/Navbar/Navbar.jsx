@@ -12,7 +12,7 @@ export default function Navbar() {
 
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/updateProfile'}>Update Profile</NavLink></li>
+        {user && <li><NavLink to={'/updateProfile'}>Update Profile</NavLink></li>}
         {user && <li><NavLink to={'/userProfile'}>User Profile</NavLink></li>}
 
     </>
@@ -43,7 +43,7 @@ export default function Navbar() {
                 {
                     user ?
                         <div className=" flex items-center gap-3">
-                            {user?.photoURL ? <div data-tip={user.displayName} className="lg:tooltip  w-10 h-30"><img className="  w-full h-full rounded-full" src={user.photoURL} alt="" /></div> : <div className=" text-5xl">< IoPersonCircle /></div>}
+                            {user?.photoURL ? <div data-tip={user.displayName} className="lg:tooltip  w-10 h-30"><img className="  w-full h-full rounded-full lg:tooltip" src={user.photoURL} alt="" /></div> : <div data-tip={user.displayName} className=" text-5xl">< IoPersonCircle /></div>}
                             <Link onClick={logout}><button className=" btn">Logout</button></Link>
                         </div>
                         :

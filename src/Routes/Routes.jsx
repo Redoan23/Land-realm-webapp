@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
-        errorElement:<Error></Error>,
+        errorElement: <Error></Error>,
 
         children: [
             {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/updateProfile',
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoute> <UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path: '/userProfile',
