@@ -40,9 +40,9 @@ export default function EstateDetails() {
                     <div className=" py-4 space-y-3 ">
                         <h3 className=" text-2xl font-semibold"> Share property</h3>
                         <div className=" grid grid-cols-2 gap-1">
-                            <div className=" flex items-center gap-1 border p-2 justify-center"> <IoLogoFacebook />  <a href="">Facebook</a></div>
-                            <div className=" flex items-center gap-1 border p-2 justify-center"> <IoLogoTwitter /><a href="">Twitter</a></div>
-                            <div className=" flex items-center gap-1 border p-2 justify-center"><IoLogoWhatsapp /> <a href="">WhatsApp</a></div>
+                            <div data-aos='fade-down' className=" flex items-center gap-1 border p-2 justify-center"> <IoLogoFacebook />  <a href="">Facebook</a></div>
+                            <div data-aos='fade-left' className=" flex items-center gap-1 border p-2 justify-center"> <IoLogoTwitter /><a href="">Twitter</a></div>
+                            <div data-aos='fade-right' className=" flex items-center gap-1 border p-2 justify-center"><IoLogoWhatsapp /> <a href="">WhatsApp</a></div>
                         </div>
                     </div>
                     <div className=" pt-1 pb-8">
@@ -61,7 +61,7 @@ export default function EstateDetails() {
             </div>
             <div className=" mx-auto w-[1000px] mt-5">
                 <h3 className=" text-2xl font-bold">Facilities</h3>
-                <div className=" flex gap-1 font-semibold pt-2">{kind.facilities.map(data => <li className=" list-none border p-2">{data}</li>)}</div>
+                <div className=" flex gap-1 font-semibold pt-2">{kind.facilities.map(data => <li data-aos='fade-left' className=" list-none border p-2">{data}</li>)}</div>
             </div>
             <div className=" w-[1000px] mx-auto">
                 <div><h3 className=" text-2xl pt-8 font-bold">About</h3></div>

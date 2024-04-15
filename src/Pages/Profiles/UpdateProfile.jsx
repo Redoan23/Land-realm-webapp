@@ -28,7 +28,7 @@ export default function UpdateProfile() {
         < div >
             <div className="lg:hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <form className="  md:border-l-2 border-gray-700">
+                    <form data-aos='fade-right' className="  md:border-l-2 border-gray-700">
                         <p className=" p-2"><span className="text-gray-500">Current Username</span> : <span className=" border-b-2 border-gray-600 font-semibold">{user.displayName}</span></p>
                         <p className=" p-2"><span className="text-gray-500">Current Useremail</span> : <span className=" border-b-2 border-gray-600 font-semibold">{user.email}</span></p>
                         <p className=" w-72 md:w-full overflow-auto p-2"><span className="text-gray-500">Current PhotoURL </span>: <span className="border-b-2 border-gray-600 font-semibold">{user.photoURL}</span></p>

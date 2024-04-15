@@ -9,7 +9,7 @@ export default function LatestNews() {
     return (
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center mt-24">
             {data.map(info =>
-                <div className="card card-compact  md:w-72 lg:w-96 bg-base-100 shadow-xl">
+                <div data-aos='fade-up' data-aos-delay="1000" className="card card-compact  md:w-72 lg:w-96 bg-base-100 shadow-xl">
                     <figure><img src={info.image} alt="news picture" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{info.title}</h2>
