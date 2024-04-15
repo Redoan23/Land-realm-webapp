@@ -3,7 +3,7 @@ import { useParams, useLoaderData } from "react-router-dom"
 import { IoLogoFacebook, IoLogoTwitter, IoLogoWhatsapp } from "react-icons/io";
 
 export default function EstateDetails() {
-    document.title='Land Details'
+    document.title = 'Land Details'
     const { id } = useParams()
     const int = parseInt(id)
 

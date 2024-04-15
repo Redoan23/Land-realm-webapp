@@ -31,7 +31,7 @@ export default function Navbar() {
                         {links}
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-4xl text-white "><span className="   text-green-400 font-black">Land</span> <span className="stroke text-white">Realm</span></Link>
+                <Link to={'/'} className="btn btn-ghost text-lg md:text-4xl text-white font-display "><span className="   text-green-800 font-black">Land</span> <span className=" text-[#DAA520]">Realm</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
