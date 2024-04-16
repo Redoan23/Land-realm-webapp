@@ -57,8 +57,8 @@ export default function Home() {
                         <div data-aos="fade-up" data-aos-transition='1500' data-aos-duration='800' className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center'>
                             {estates.map(estate => <div data-aos="fade-up" key={estate.id}>
 
-                                <div className=" rounded-3xl md:w-72 lg:w-96 shadow-xl image-full">
-                                    <figure className='p-3'><img className=' rounded-3xl' src={estate.image} alt="estate" /></figure>
+                                <div className="  md:w-72 lg:w-96 shadow-xl image-full">
+                                    <figure className=''><img className='' src={estate.image} alt="estate" /></figure>
                                     <div className="card-body ">
                                         <h2 className="card-title">{estate.estate_title}</h2>
                                         <p className=' font-medium'>{estate.segment_name}</p>
@@ -70,7 +70,7 @@ export default function Home() {
                                         <p>{estate.price}</p>
 
                                         <div className="card-actions justify-end">
-                                            <Link to={`/estatedetails/${estate.id}`}><button className="btn hover:border-black hover:bg-white ">View details</button></Link>
+                                            <Link to={`/estatedetails/${estate.id}`}><button className="btn rounded-none hover:border-black hover:bg-white ">View details</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -84,14 +84,10 @@ export default function Home() {
             <div>
                 <h3 className=' text-center font-bold text-5xl mt-36'>Find Us</h3>
                 <div className=' mt-10'>
-                    {/* 39.16918027836418, -105.33671804264205 */}
-                    {/* 39.72130160051529, -105.29487217790968 */}
-
                     <MapContainer
                         center={[39.16918027836418, -105.33671804264205]}
                         zoom={8}
-                        scrollWheelZoom={true}
-                        // style={{ width: '100vw', height: '100vh' }}
+                        scrollWheelZoom={false}
                         className=' mx-auto w-screen h-96 flex justify-center'
                     >
                         <TileLayer

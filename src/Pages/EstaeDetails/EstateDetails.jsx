@@ -46,7 +46,7 @@ export default function EstateDetails() {
                         </div>
                     </div>
                     <div className=" pt-1 pb-8">
-                        <button className=" btn bg-orange-400 text-white hover:text-black">MAKE ENQUIRY</button>
+                        <button className=" btn rounded-none bg-orange-400 text-white hover:text-black">MAKE ENQUIRY</button>
                     </div>
                     <hr />
                     <div>
