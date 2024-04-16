@@ -1,17 +1,17 @@
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-// import 'swiper/less/navigation';
+import SwiperCore from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Link, useLoaderData } from "react-router-dom";
-import { Navigation, Pagination } from 'swiper/modules';
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const position = [51.505, -0.09]
 
 AOS.init();
+SwiperCore.use([Navigation]);
 
 export default function Home() {
     document.title = 'Land realm'
@@ -34,19 +34,25 @@ export default function Home() {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     loop={true}
-                    modules={[Navigation, Pagination]}
-
+                    pagination={{ clickable: true }}
+                    className=' w-screen h-96'
+                    navigation
 
                 >
-                    <SwiperSlide>{<img src="https://i.ibb.co/5WgQpFZ/4673.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/RpdksCG/2147652038.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/hLg9NsJ/15242.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/xsdNqRW/rebecca-mckenna-DWu-Wm-Sz-RO0-M-unsplash.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/xs8BWsd/13956.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/s2HY2yc/4287.jpg" alt="" />}</SwiperSlide>
-                    <SwiperSlide>{<img src="https://i.ibb.co/XC5f8xP/102.jpg" alt="" />}</SwiperSlide>
 
+                        <SwiperSlide>{<img src="https://i.ibb.co/p1Gf9mZ/27402.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/5WgQpFZ/4673.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/6vzGxwv/jeff-burak-l-PO0-Vz-F-4s8-unsplash.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/RpdksCG/2147652038.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/hLg9NsJ/15242.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/vcBrcdX/25.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/0BgmRXZ/rebecca-mckenna-DWu-Wm-Sz-RO0-M-unsplash.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/xs8BWsd/13956.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/s2HY2yc/4287.jpg" alt="" />}</SwiperSlide>
+                        <SwiperSlide>{<img src="https://i.ibb.co/XC5f8xP/102.jpg" alt="" />}</SwiperSlide>
+
+                    {/* <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> */}
                 </Swiper>
             </div>
 

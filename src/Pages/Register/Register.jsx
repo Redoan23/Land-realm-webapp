@@ -84,9 +84,9 @@ export default function Register() {
                                 <span className="label-text">Password</span>
                             </label>
                             <input type={showPass ? 'text' : 'password'} name="password" placeholder="password" className=" relative input input-bordered" required />
-                            <label className="label">
+                            {/* <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                            </label>
+                            </label> */}
                         </div>
                         <div className=" absolute top-[360px] left-72 md:left-[325px]" onClick={() => { setShowPass(!showPass) }}>
                             {!showPass && <IoIosEye />}
