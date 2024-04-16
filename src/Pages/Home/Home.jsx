@@ -55,10 +55,12 @@ export default function Home() {
                     <div className=' text-center font-bold text-3xl mt-20 pb-10'>Estates</div>
                     <div>
                         <div data-aos="fade-up" data-aos-transition='1500' data-aos-duration='800' className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center'>
-                            {estates.map(estate => <div data-aos="fade-up" key={estate.id}>
+                            {estates.map(estate => <div className='  ' data-aos="fade-up" key={estate.id}>
 
-                                <div className="  md:w-72 lg:w-96 shadow-xl image-full">
-                                    <figure className=''><img className='' src={estate.image} alt="estate" /></figure>
+                                <div className=" hover:-translate-y-3 ease-in-out duration-[700ms] transition-all    md:w-72 lg:w-96 shadow-xl image-full">
+                                    <div className=' overflow-hidden'>
+                                        <figure className=''><img className=' hover:scale-[1.3] duration-[700ms] ease-in-out' src={estate.image} alt="estate" /></figure>
+                                    </div>
                                     <div className="card-body ">
                                         <h2 className="card-title">{estate.estate_title}</h2>
                                         <p className=' font-medium'>{estate.segment_name}</p>
