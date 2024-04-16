@@ -77,7 +77,7 @@ export default function Register() {
                             <label className="label">
                                 <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="text" name="PhotoUrl" placeholder="Photo URL" className="input input-bordered" required />
+                            <input type="text" name="PhotoUrl" placeholder="Photo URL" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">

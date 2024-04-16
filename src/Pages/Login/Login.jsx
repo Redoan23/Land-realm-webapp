@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, Navigate, useNavigate } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
 
 export default function Login() {
@@ -8,6 +8,7 @@ export default function Login() {
 
     const { login, googleLogin, githubLogin } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState(null)
+    const navigate= useNavigate()
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -18,8 +19,9 @@ export default function Login() {
 
         login(email, password)
             .then(res => {
-                console.log(res.user)
                 alert('login successful')
+                navigate('/')
+                
             })
             .catch(err => {
                 console.error(err)

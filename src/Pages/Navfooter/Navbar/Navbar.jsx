@@ -44,7 +44,7 @@ export default function Navbar() {
                 {
                     user ?
                         <div className="flex items-center gap-3">
-                            {user?.photoURL ? <div data-tip={user.displayName} className="lg:tooltip  w-10 h-10"><img className=" w-full h-full rounded-full lg:tooltip" src={user.photoURL} alt="" /></div> : <div data-tip={user.displayName} className=" text-5xl">< IoPersonCircle /></div>}
+                            {user?.photoURL ? <div data-tip={user.displayName} className="lg:tooltip  w-10 h-10"><img className=" w-full h-full rounded-full lg:tooltip" src={user.photoURL} alt="" /></div> : <div data-tip={user.displayName} className=" text-5xl lg:tooltip">< IoPersonCircle /></div>}
                             <Link onClick={logout}><button className=" btn">Logout</button></Link>
                         </div>
                         :
