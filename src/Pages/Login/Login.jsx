@@ -1,14 +1,16 @@
 import { useContext, useState } from "react"
-import { Link, Navigate, useNavigate } from "react-router-dom"
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom"
 import { AuthContext } from "../AuthProvider/AuthProvider"
 
 export default function Login() {
 
-    document.title='Login'
+    document.title = 'Login'
 
     const { login, googleLogin, githubLogin } = useContext(AuthContext)
     const [errMsg, setErrMsg] = useState(null)
-    const navigate= useNavigate()
+    const location = useLocation()
+    console.log(location)
+    const navigate = useNavigate()
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -20,8 +22,8 @@ export default function Login() {
         login(email, password)
             .then(res => {
                 alert('login successful')
-                navigate('/')
-                
+                navigate(location?.state ? location.state : '/')
+
             })
             .catch(err => {
                 console.error(err)
@@ -29,10 +31,23 @@ export default function Login() {
 
             })
 
+
         e.target.reset()
     }
 
+    const handleGoogle = () => {
+        googleLogin()
+            .then(res => {
+                navigate(location?.state ? location.state : '/')
+            })
+    }
 
+    const handleGithub = () => {
+        githubLogin()
+            .then(res => {
+                navigate(location?.state ? location.state : '/')
+            })
+    }
 
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -65,8 +80,8 @@ export default function Login() {
                     </form>
 
                     <div className="flex items-center justify-center pb-5 gap-6">
-                        <Link onClick={googleLogin}><span className="text-blue-600 font-semibold">G</span><span className=" text-red-600">o</span><span className=" text-yellow-400">o</span><span className=" text-blue-600">g</span><span className=" text-green-700">l</span><span className="text-red-600">e</span></Link>
-                        <Link onClick={githubLogin}><span className="text-black ">Github</span></Link>
+                        <Link onClick={handleGoogle}><span className="text-blue-600 font-semibold">G</span><span className=" text-red-600">o</span><span className=" text-yellow-400">o</span><span className=" text-blue-600">g</span><span className=" text-green-700">l</span><span className="text-red-600">e</span></Link>
+                        <Link onClick={handleGithub}><span className="text-black ">Github</span></Link>
                     </div>
 
                     <p className="text-xs pb-3 flex justify-center gap-2">Don't have an account? <Link to='/register' className="text-red-600">Register</Link></p>
